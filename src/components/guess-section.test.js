@@ -8,4 +8,10 @@ describe('<GuessSection/>', () => {
 	it('Renders without crashing', () =>{
 		shallow(<GuessSection/>)
 	})
+
+	it('Displays some testFeedback text', () => {
+		const testText = 'testFeedbackText';
+		let wrapper = shallow(<GuessSection feedback={testText}/>);
+		expect(wrapper.contains(testText)).toEqual(true);
+	})
 })
