@@ -21,23 +21,6 @@ describe('<Header/>', () => {
         expect(wrapper.contains(<h1>HOT or COLD</h1>)).toEqual(true);
     });
 
-
-    // it('Can add lists to the state', () => {
-    //     const wrapper = shallow(<Game/>);
-    //     const instance = wrapper.instance();
-    //     seedLists.forEach(instance.addList);
-    //     expect(wrapper.state('lists').length).toEqual(seedLists.length);
-    // });
-
-    // it('Renders the lists', () => {
-    //     const wrapper = shallow(<Game/>);
-    //     const instance = wrapper.instance();
-    //     seedLists.forEach(instance.addList);
-    //     const lists = wrapper.find('List');
-    //     expect(lists.length).toEqual(seedLists.length);
-    //     const firstList = lists.first();
-    //     expect(firstList.prop('title')).toEqual(seedLists[0]);
-    // });
 });
 
 
